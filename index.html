@@ -299,6 +299,62 @@
       font-weight: 700;
     }
 
+    .skills-intro {
+      margin-bottom: 18px;
+    }
+
+    .skill-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .skill-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .skill-name {
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .skill-years {
+      flex-shrink: 0;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.24);
+      color: #dbeafe;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+
+    .years-summary {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .years-summary strong {
+      color: var(--text);
+      margin-right: 8px;
+      font-size: 1rem;
+    }
+
     .project-card {
       display: flex;
       flex-direction: column;
@@ -414,6 +470,11 @@
       .btn {
         width: 100%;
       }
+
+      .skill-item {
+        align-items: flex-start;
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -437,8 +498,7 @@
         <div class="hero-main">
           <div class="eyebrow"> SaaS / API Integration / AI</div>
           <h1>
-            業務システムとAIをつなぐ<br />
-            ソフトウェアエンジニア
+            Business Systems Engineer (API / AI Integration)<br />
           </h1>
           <p class="lead">
             SaaS開発、API連携、Salesforce、RAG/LLM活用を軸に、
@@ -522,52 +582,78 @@
           <div class="section-label">Skills</div>
           <h2 class="section-title">技術スタック</h2>
           <p class="section-desc">
-            実務で扱ってきた中心技術を整理しています。
+            エンジニア歴10年の中で、継続して使ってきた代表技術を実務年数ベースで整理しています。
           </p>
         </div>
 
-        <div class="grid-2">
+        <div class="skills-intro">
+          <div class="years-summary"><strong>10 years</strong> Overall Engineering Experience</div>
+        </div>
+
+        <div class="grid-3">
           <article class="card">
             <h3>Backend</h3>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">VB.NET</span>
-              <span class="tag">C#</span>
-              <span class="tag">REST API</span>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-years">6 years</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <span class="skill-years">4 years</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">C#</span>
+                <span class="skill-years">4 years</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">VB.NET</span>
+                <span class="skill-years">4 years</span>
+              </div>
             </div>
           </article>
 
           <article class="card">
             <h3>Frontend</h3>
-            <div class="tags">
-              <span class="tag">React</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">HTML/CSS</span>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-years">7 years</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-years">3 years</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">webpack</span>
+                <span class="skill-years">3 years</span>
+              </div>
             </div>
           </article>
 
           <article class="card">
-            <h3>Salesforce</h3>
-            <div class="tags">
-              <span class="tag">Apex</span>
-              <span class="tag">LWC</span>
-              <span class="tag">Flow</span>
-              <span class="tag">2GP</span>
-              <span class="tag">AppExchange</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>AI / Cloud</h3>
-            <div class="tags">
-              <span class="tag">Azure OpenAI</span>
-              <span class="tag">LangChain</span>
-              <span class="tag">Azure AI Search</span>
-              <span class="tag">Form Recognizer</span>
-              <span class="tag">Docker</span>
-              <span class="tag">CI/CD</span>
+            <h3>Framework</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span class="skill-name">React</span>
+                <span class="skill-years">3 years</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Next.js</span>
+                <span class="skill-years">2 years</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">.NET Core</span>
+                <span class="skill-years">4 years</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Salesforce</span>
+                <span class="skill-years">3 years</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">kintone</span>
+                <span class="skill-years">2 years</span>
+              </div>
             </div>
           </article>
         </div>
@@ -607,18 +693,19 @@
 
           <article class="card project-card">
             <div class="project-top">
-              <h3 class="project-title">Salesforce Custom Calendar</h3>
-              <span class="project-badge">AppExchange</span>
+              <h3 class="project-title">業務販売管理システム</h3>
+              <span class="project-badge">Business System</span>
             </div>
             <p>
-              LWC + FullCalendar を用いた高機能カレンダーコンポーネント。
-              リソース表示、出欠管理、汎用設定、製品化を意識した構成で開発。
+              .NETベースの業務販売管理システム開発に従事。
+              AWS上のサーバー運用を前提に、AWS Lambda や Python スクリプトも組み合わせながら、
+              業務処理の自動化や周辺機能の実装に対応。
             </p>
             <div class="tags">
-              <span class="tag">Salesforce</span>
-              <span class="tag">Apex</span>
-              <span class="tag">LWC</span>
-              <span class="tag">FullCalendar</span>
+              <span class="tag">.NET</span>
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">AWS Lambda</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/enegori6160" target="_blank" rel="noreferrer">GitHub</a>
@@ -627,18 +714,19 @@
 
           <article class="card project-card">
             <div class="project-top">
-              <h3 class="project-title">SaaS / API Integration</h3>
-              <span class="project-badge">Integration</span>
+              <h3 class="project-title">AI-OCR請求書管理システム</h3>
+              <span class="project-badge">OCR</span>
             </div>
             <p>
-              Salesforce、kintone、Teamsなど複数サービス間の連携開発。
-              データ同期、自動化、業務フロー効率化をテーマに実装。
+              請求書の読み取りと管理を効率化する AI-OCR システムを開発。
+              OCR結果の取り込み、データ整形、管理画面側の実装まで含めて対応し、
+              手作業の入力負荷を削減する業務フローを構築。
             </p>
             <div class="tags">
-              <span class="tag">API</span>
-              <span class="tag">kintone</span>
-              <span class="tag">Teams</span>
-              <span class="tag">Node.js</span>
+              <span class="tag">.NET</span>
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">AI-OCR</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/enegori6160" target="_blank" rel="noreferrer">GitHub</a>
